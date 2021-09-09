@@ -10,7 +10,6 @@ function totalItv() {
     }
     console.log(listOfApps)
     finalLink = finalLink + (listOfApps)
-    console.log(finalLink)
     document.getElementsByName("generatedLink")[0].value = finalLink;
 }
 

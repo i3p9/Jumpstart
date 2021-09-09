@@ -5,8 +5,8 @@
 html {
   position: relative;
   min-height: 100%;
-
 }
+
 body {
   max-width: 1500px;
   margin: 0 auto !important;
@@ -20,6 +20,11 @@ body {
 .font-bold {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
+}
+
+.app-catagories {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
 }
 
 .alert{

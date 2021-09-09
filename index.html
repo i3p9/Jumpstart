@@ -23,17 +23,126 @@
 <body class="d-flex flex-column h-100">
     <main class="flex-shrink-0">
     <div class="container">
-        <h2 class="mt-5 font-bold">Jumpstart (for macOS)</h2>
+        <h2 class="mt-5 font-bold">Jumpstart⚡ (for macOS)</h2>
         <p>Jumpstart is a script generator for installing/updating multiple macOS Applications at once.</p>
         <p>Simply check the applications you want installed, press 'Generate Script' and then copy/paste the script to Terminal.<br>
         It uses Homebrew, if you don't have homebrew it'll install it when the script is ran for the first time.</p>
         <br>
         <h3 class="font-bold">Choose your Applications</h3>
-        <input class="form-check-input" name="values" value="google-chrome" type="checkbox" id="bit11" /> Google Chrome <br>
-        <input class="form-check-input" name="values" value="iina" type="checkbox" id="bit12" /> IINA<br>
-        <input class="form-check-input" name="values" value="transmission" type="checkbox" id="bit13" /> Transmission <br>
-        <input class="form-check-input" name="values" value="firefox" type="checkbox" id="bit14" /> Mozilla Firefox<br>
-        <input class="form-check-input" name="values" value="visual-studio-code" type="checkbox" id="bit15" /> Visual Studio Code<br>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h3 class="app-catagories">Browsers</h3>
+                    <input class="form-check-input" name="values" value="chromium" type="checkbox" /> Chromium<br>
+                    <input class="form-check-input" name="values" value="google-chrome" type="checkbox" /> Google Chrome<br>
+                    <input class="form-check-input" name="values" value="firefox" type="checkbox" /> Mozilla Firefox<br>
+                    <input class="form-check-input" name="values" value="brave-browser" type="checkbox" /> Brave<br>
+                    <input class="form-check-input" name="values" value="microsoft-edge" type="checkbox" /> Microsoft Edge<br>
+                </div>
+                <div class="col">
+                    <h3 class="app-catagories">Messaging</h3>
+                    <input class="form-check-input" name="values" value="zoom" type="checkbox" /> Zoom<br>
+                    <input class="form-check-input" name="values" value="whatsapp" type="checkbox" /> Whatsapp<br>
+                    <input class="form-check-input" name="values" value="discord" type="checkbox" /> Discord<br>
+                    <input class="form-check-input" name="values" value="slack" type="checkbox" /> Slack<br>
+                    <input class="form-check-input" name="values" value="microsoft-teams" type="checkbox" /> MS Teams<br>
+                    <input class="form-check-input" name="values" value="telegram" type="checkbox" /> Telegram<br>
+                    <input class="form-check-input" name="values" value="element" type="checkbox" /> Element (matrix)<br>
+                </div>
+                <div class="col">
+                    <h3 class="app-catagories">Password Managers</h3>
+                    <input class="form-check-input" name="values" value="1password" type="checkbox" /> 1Password<br>
+                    <input class="form-check-input" name="values" value="bitwarden" type="checkbox" /> Bitwarden⚡<br>
+                    <input class="form-check-input" name="values" value="lastpass" type="checkbox" /> Lastpass<br>
+                    <input class="form-check-input" name="values" value="authy" type="checkbox" /> Authy<br>
+                    <input class="form-check-input" name="values" value="keepassxc" type="checkbox" /> KeepassXC<br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h3 class="app-catagories">Utilities</h3>
+                    <input class="form-check-input" name="values" value="rectangle" type="checkbox" /> Rectangle⚡<br>
+                    <input class="form-check-input" name="values" value="appcleaner" type="checkbox" /> AppCleaner⚡<br>
+                    <input class="form-check-input" name="values" value="bettertouchtool" type="checkbox" /> BetterTouchTool⚡<br>
+                    <input class="form-check-input" name="values" value="shifty" type="checkbox" /> Shifty<br>
+                    <input class="form-check-input" name="values" value="lulu" type="checkbox" /> Lulu<br>
+                    <input class="form-check-input" name="values" value="controlplane" type="checkbox" /> ControlPlane<br>
+                    <input class="form-check-input" name="values" value="mos" type="checkbox" /> Mos<br>
+                    <input class="form-check-input" name="values" value="keka" type="checkbox" /> Keka<br>
+                    <input class="form-check-input" name="values" value="unified-remote" type="checkbox" /> Unified Remote<br>
+                    <input class="form-check-input" name="values" value="raycast" type="checkbox" /> Raycast⚡<br>
+                    <input class="form-check-input" name="values" value="alfred" type="checkbox" /> Alfred<br>
+                    <input class="form-check-input" name="values" value="cheatsheet" type="checkbox" /> Cheatsheet<br>
+                    <input class="form-check-input" name="values" value="grandperspective" type="checkbox" /> Grandperspective<br>
+                    <input class="form-check-input" name="values" value="gemini" type="checkbox" /> Gemini<br>
+                    <input class="form-check-input" name="values" value="hazel" type="checkbox" /> Hazel<br>
+                </div>
+                <div class="col">
+                    <h3 class="app-catagories">Media</h3>
+                    <input class="form-check-input" name="values" value="iina" type="checkbox" /> IINA⚡<br>
+                    <input class="form-check-input" name="values" value="spotify" type="checkbox" /> Spotify<br>
+                    <input class="form-check-input" name="values" value="tidal" type="checkbox" /> Tidal<br>
+                    <input class="form-check-input" name="values" value="vlc" type="checkbox" /> VLC Media Player<br>
+                    <input class="form-check-input" name="values" value="downie" type="checkbox" /> Downie<br>
+                    <input class="form-check-input" name="values" value="jdownloader" type="checkbox" /> jDownloader<br>
+                    <input class="form-check-input" name="values" value="handbrake" type="checkbox" /> Handbrake<br>
+                    <input class="form-check-input" name="values" value="audacity" type="checkbox" /> Audacity<br>
+                    <input class="form-check-input" name="values" value="audio-hijack" type="checkbox" /> Audio Hijack<br>
+                    <input class="form-check-input" name="values" value="soundflower" type="checkbox" /> Soundflower<br>
+                    <input class="form-check-input" name="values" value="krisp" type="checkbox" /> Krisp<br>
+                    <input class="form-check-input" name="values" value="audacity" type="checkbox" /> Audacity<br>
+                </div>
+                <div class="col">
+                    <h3 class="app-catagories">Developer Tools</h3>
+                    <input class="form-check-input" name="values" value="visual-studio-code" type="checkbox" /> Visual Studio Code⚡<br>
+                    <input class="form-check-input" name="values" value="sublime-text" type="checkbox" /> Sublime Text<br>
+                    <input class="form-check-input" name="values" value="atom" type="checkbox" /> Atom<br>
+                    <input class="form-check-input" name="values" value="coteditor" type="checkbox" /> CotEditor⚡<br>
+                    <input class="form-check-input" name="values" value="imageoptim" type="checkbox" /> ImageOptim<br>
+                    <input class="form-check-input" name="values" value="postman" type="checkbox" /> Postman⚡<br>
+                    <input class="form-check-input" name="values" value="paw" type="checkbox" /> Paw<br>
+                    <input class="form-check-input" name="values" value="sourcetree" type="checkbox" /> SourceTree<br>
+                    <input class="form-check-input" name="values" value="tower" type="checkbox" /> Tower<br>
+                    <input class="form-check-input" name="values" value="iterm2" type="checkbox" /> iTerm2⚡<br>
+                    <input class="form-check-input" name="values" value="vagrant-manager" type="checkbox" /> Vagrant Manager<br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h3 class="app-catagories">Productivity</h3>
+                    <input class="form-check-input" name="values" value="typora" type="checkbox" /> Typora⚡<br>
+                    <input class="form-check-input" name="values" value="notion" type="checkbox" /> Notion<br>
+                    <input class="form-check-input" name="values" value="evernote" type="checkbox" /> Evernote<br>
+                    <input class="form-check-input" name="values" value="numi" type="checkbox" /> Numi<br>
+                    <input class="form-check-input" name="values" value="soulver" type="checkbox" /> Soulver<br>
+                    <input class="form-check-input" name="values" value="fantastical" type="checkbox" /> Fantastical<br>
+                    <input class="form-check-input" name="values" value="pdf-expert" type="checkbox" /> PDF Expert<br>
+                </div>
+                <div class="col">
+                    <h3 class="app-catagories">Online Storage/Sync</h3>
+                    <input class="form-check-input" name="values" value="backblaze" type="checkbox" /> Backblaze<br>
+                    <input class="form-check-input" name="values" value="google-drive" type="checkbox" /> Google Drive<br>
+                    <input class="form-check-input" name="values" value="dropbox" type="checkbox" /> Dropbox<br>
+                    <input class="form-check-input" name="values" value="carbon-copy-cloner" type="checkbox" /> Carbon Copy Cloner<br>
+                    <input class="form-check-input" name="values" value="superduper" type="checkbox" /> SuperDuper<br>
+                    <input class="form-check-input" name="values" value="chronosync" type="checkbox" /> ChronoSync<br>
+                    <input class="form-check-input" name="values" value="syncthing" type="checkbox" /> Syncthing<br>
+                    <input class="form-check-input" name="values" value="cyberduck" type="checkbox" /> Cyberduck<br>
+                    <input class="form-check-input" name="values" value="mountainduck" type="checkbox" /> Mountain Duck<br>
+                </div>
+                <div class="col">
+                    <h3 class="app-catagories">Menu Bar Apps</h3>
+                    <input class="form-check-input" name="values" value="monitorcontrol" type="checkbox" /> MonitorControl<br>
+                    <input class="form-check-input" name="values" value="dozer" type="checkbox" /> Dozer<br>
+                    <input class="form-check-input" name="values" value="hiddenbar" type="checkbox" /> Hidden Bar⚡<br>
+                    <input class="form-check-input" name="values" value="maccy" type="checkbox" /> Maccy⚡<br>
+                    <input class="form-check-input" name="values" value="itsycal" type="checkbox" /> Itsycal⚡<br>
+                    <input class="form-check-input" name="values" value="meetingbar" type="checkbox" /> MeetingBar<br>
+                    <input class="form-check-input" name="values" value="sip" type="checkbox" /> Sip<br>
+                    <input class="form-check-input" name="values" value="xbar" type="checkbox" /> Xbar<br>
+                </div>
+            </div>
+        </div>
         <br>
         <button type="button" class="btn btn-outline-primary" onclick="totalItv()">Generate Script</button>
         <button type="button" class="btn btn-danger" onclick="clearAll()">Clear All</button>
