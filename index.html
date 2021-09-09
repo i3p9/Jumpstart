@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- CSS and JS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js"></script>
+
+    <title>Jumpstart</title>
+</head>
+
+<body class="d-flex flex-column h-100">
+    <main class="flex-shrink-0">
+    <div class="container">
+        <h2 class="mt-5 font-bold">Jumpstart (for macOS)</h2>
+        <p>Jumpstart is a script generator for installing/updating multiple macOS Applications at once.</p>
+        <p>Simply check the applications you want installed, press 'Generate Script' and then copy/paste the script to Terminal.<br>
+        It uses Homebrew, if you don't have homebrew it'll install it when the script is ran for the first time.</p>
+        <br>
+        <h3 class="font-bold">Choose your Applications</h3>
+        <input class="form-check-input" name="values" value="google-chrome" type="checkbox" id="bit11" /> Google Chrome <br>
+        <input class="form-check-input" name="values" value="iina" type="checkbox" id="bit12" /> IINA<br>
+        <input class="form-check-input" name="values" value="transmission" type="checkbox" id="bit13" /> Transmission <br>
+        <input class="form-check-input" name="values" value="firefox" type="checkbox" id="bit14" /> Mozilla Firefox<br>
+        <input class="form-check-input" name="values" value="visual-studio-code" type="checkbox" id="bit15" /> Visual Studio Code<br>
+        <br>
+        <button type="button" class="btn btn-outline-primary" onclick="totalItv()">Generate Script</button>
+        <button type="button" class="btn btn-danger" onclick="clearAll()">Clear All</button>
+        <div>
+            <br>
+            <input class="form-control" value="You have to tick at least one item..." readonly="readonly" type="text" name="generatedLink" id="generatedLink"/>
+        </div>
+        <br>
+        <button type="button" class="btn btn-primary" onclick="toClipboard()">Copy to Clipboard</button>
+        <div class="alert alert-success alert-dismissable" role="alert" id="clipboardMessage">
+            Link copied to Clipboard successfully
+        </div>
+        <br>
+        <br>
+        It uses Homebrew (<a href="https://brew.sh">https://brew.sh</a>) as the package manager to install applications. Homebrew is open-source and the most popular package manager for macOS.<br>
+        Since it's such a robust tool I did not want to reinvent the wheel, just automating the process for new users.
+        <br>
+        <br>
+    </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+        <span class="text-muted">Made by mostly duct taping some error prone codes 🧨. Source code <a href="https://github.com/i3p9/Jumpstart">here.</a></span>
+        </div>
+    </footer>
+</body>
+</html>
